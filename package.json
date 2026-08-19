@@ -1,0 +1,16 @@
+{
+  "name": "stormcellz-alert-poller",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Polls NWS active alerts every 5 minutes and pushes to StormCellz's FCM topics. Runs on GitHub Actions — no server, no Firestore, no Cloud Functions.",
+  "main": "poller.js",
+  "scripts": {
+    "start": "node poller.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.4.0"
+  }
+}
