@@ -1,12 +1,4 @@
 {
-  "vtec_KPAH_FA_Y_0136": {
-    "tier": "minor",
-    "zones": [
-      "MOC201"
-    ],
-    "endsAtMs": 1787161500000,
-    "expireAtMs": 1787183100000
-  },
   "vtec_KIND_FL_W_0176": {
     "tier": "severe",
     "zones": [
@@ -2016,16 +2008,6 @@
     "endsAtMs": 1787169600000,
     "expireAtMs": 1787191200000
   },
-  "id_urn_oid_2.49.0.1.840.0.662a87e2a2fe0bde97885ba6bd0f7c1e450e3309.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "PRZ008",
-      "PRZ009",
-      "PRZ010"
-    ],
-    "endsAtMs": 1787161500000,
-    "expireAtMs": 1787183100000
-  },
   "vtec_KTAE_MA_W_0303": {
     "tier": "severe",
     "zones": [
@@ -2058,24 +2040,6 @@
     ],
     "endsAtMs": 1787248800000,
     "expireAtMs": 1787270400000
-  },
-  "vtec_KMOB_MA_W_0150": {
-    "tier": "severe",
-    "zones": [
-      "GMZ675"
-    ],
-    "endsAtMs": 1787161500000,
-    "expireAtMs": 1787183100000
-  },
-  "vtec_KGID_SV_W_0269": {
-    "tier": "severe",
-    "zones": [
-      "NEC121",
-      "NEC125",
-      "NEC143"
-    ],
-    "endsAtMs": 1787161500000,
-    "expireAtMs": 1787183100000
   },
   "vtec_KHGX_HT_Y_0008": {
     "tier": "moderate",
@@ -2268,15 +2232,6 @@
     ],
     "endsAtMs": 1787270400000,
     "expireAtMs": 1787292000000
-  },
-  "vtec_KGID_FF_W_0007": {
-    "tier": "severe",
-    "zones": [
-      "NEC077",
-      "NEC125"
-    ],
-    "endsAtMs": 1787184000000,
-    "expireAtMs": 1787205600000
   },
   "vtec_TJSJ_FA_Y_0218": {
     "tier": "minor",
@@ -5537,14 +5492,6 @@
     "endsAtMs": 1787192100000,
     "expireAtMs": 1787213700000
   },
-  "vtec_KTWC_SV_W_0194": {
-    "tier": "severe",
-    "zones": [
-      "AZC003"
-    ],
-    "endsAtMs": 1787184000000,
-    "expireAtMs": 1787205600000
-  },
   "vtec_KJAN_SV_W_0282": {
     "tier": "severe",
     "zones": [
@@ -5839,14 +5786,6 @@
     "endsAtMs": 1787184900000,
     "expireAtMs": 1787206500000
   },
-  "vtec_KPSR_SV_W_0080": {
-    "tier": "severe",
-    "zones": [
-      "AZC007"
-    ],
-    "endsAtMs": 1787184000000,
-    "expireAtMs": 1787205600000
-  },
   "id_urn_oid_2.49.0.1.840.0.bb3129a1a139c7c2848b1f599212e1ae2fa2f35a.001.1": {
     "tier": "moderate",
     "zones": [
@@ -5855,17 +5794,6 @@
       "MOZ024",
       "MOZ031",
       "MOZ032"
-    ],
-    "endsAtMs": 1787184000000,
-    "expireAtMs": 1787205600000
-  },
-  "vtec_KJAX_SV_W_0216": {
-    "tier": "severe",
-    "zones": [
-      "FLC003",
-      "FLC007",
-      "FLC019",
-      "FLC125"
     ],
     "endsAtMs": 1787184000000,
     "expireAtMs": 1787205600000
@@ -5976,5 +5904,194 @@
     ],
     "endsAtMs": 1787184000000,
     "expireAtMs": 1787205600000
+  },
+  "id_urn_oid_2.49.0.1.840.0.7c5332d822b7e2a917f25dc3c3f13f474b215740.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ132",
+      "FLZ225",
+      "FLZ232",
+      "FLZ325",
+      "FLZ425"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.e0070b3a10d8c0d4ce3073fbe16fb37f8d0971ee.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "ALZ066",
+      "ALZ067",
+      "ALZ069"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "vtec_KILX_FF_W_0075": {
+    "tier": "severe",
+    "zones": [
+      "ILC179",
+      "ILC203"
+    ],
+    "endsAtMs": 1787194800000,
+    "expireAtMs": 1787216400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.747f0793a9aee63821c30d96c20c9c144f1e74ef.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "COZ091"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "vtec_PAFG_BW_Y_5241": {
+    "tier": "minor",
+    "zones": [
+      "PKZ861"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
+  },
+  "vtec_KTWC_FF_W_0140": {
+    "tier": "severe",
+    "zones": [
+      "AZC019"
+    ],
+    "endsAtMs": 1787193900000,
+    "expireAtMs": 1787215500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.1cc8800186eee2b7c564edebf37f340ba06eafe3.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "KSZ043"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.1e8d62ff6b218bd27cd969bd1d3ebcb9bf253dc5.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "ALZ032",
+      "ALZ033",
+      "ALZ039"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "vtec_KTAE_FA_Y_0110": {
+    "tier": "minor",
+    "zones": [
+      "FLC065",
+      "FLC079",
+      "GAC027",
+      "GAC131",
+      "GAC185",
+      "GAC275"
+    ],
+    "endsAtMs": 1787190300000,
+    "expireAtMs": 1787211900000
+  },
+  "vtec_KTWC_SV_W_0196": {
+    "tier": "severe",
+    "zones": [
+      "AZC003"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.6e23e012e8758ff746924aca7255be967578ed0b.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "AZZ558",
+      "AZZ560",
+      "AZZ562",
+      "AZZ563"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "vtec_KIND_FF_W_0085": {
+    "tier": "severe",
+    "zones": [
+      "INC057"
+    ],
+    "endsAtMs": 1787193900000,
+    "expireAtMs": 1787215500000
+  },
+  "vtec_KTAE_SV_W_0323": {
+    "tier": "severe",
+    "zones": [
+      "FLC065",
+      "FLC079",
+      "GAC027",
+      "GAC131",
+      "GAC185",
+      "GAC275"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.e894e732f511af469063d07dc2fd1da59d272e37.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ030",
+      "FLZ031",
+      "FLZ136",
+      "FLZ236",
+      "FLZ340"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "vtec_KMOB_MA_W_0158": {
+    "tier": "severe",
+    "zones": [
+      "GMZ630",
+      "GMZ631"
+    ],
+    "endsAtMs": 1787188500000,
+    "expireAtMs": 1787210100000
+  },
+  "vtec_KPUB_SV_W_0268": {
+    "tier": "severe",
+    "zones": [
+      "COC101"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.596171d14e9dcec0966e2ff03f00a595879177f2.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "ALZ264",
+      "ALZ266"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.ca75ab852d025e2ddc9ba653486762a0fce72ea4.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "ALZ023",
+      "ALZ032"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.ded73921e6f4a178cc15a89e1d504c700cc964d1.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ144"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
+  },
+  "vtec_KFGZ_SV_W_0093": {
+    "tier": "severe",
+    "zones": [
+      "AZC017"
+    ],
+    "endsAtMs": 1787184900000,
+    "expireAtMs": 1787206500000
   }
 }
