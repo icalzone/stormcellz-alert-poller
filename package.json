@@ -8,7 +8,7 @@
     "start": "node poller.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "firebase-admin": "^12.4.0"
