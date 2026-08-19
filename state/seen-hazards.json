@@ -2558,5 +2558,32 @@
     ],
     "endsAtMs": 1787274000000,
     "expireAtMs": 1787295600000
+  },
+  "vtec_KGID_SV_W_0271": {
+    "tier": "severe",
+    "zones": [
+      "NEC143",
+      "NEC185"
+    ],
+    "endsAtMs": 1787165100000,
+    "expireAtMs": 1787186700000
+  },
+  "id_urn_oid_2.49.0.1.840.0.48cc2d8ef6b7342483cabf4ba5c9ef886366d960.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "PRZ008",
+      "PRZ009",
+      "PRZ010"
+    ],
+    "endsAtMs": 1787166900000,
+    "expireAtMs": 1787188500000
+  },
+  "vtec_KOAX_SV_W_0368": {
+    "tier": "severe",
+    "zones": [
+      "NEC023"
+    ],
+    "endsAtMs": 1787164200000,
+    "expireAtMs": 1787185800000
   }
 }
