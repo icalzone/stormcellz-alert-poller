@@ -1790,5 +1790,28 @@
     ],
     "endsAtMs": 1787173200000,
     "expireAtMs": 1787194800000
+  },
+  "vtec_KMFL_XH_W_0001": {
+    "tier": "severe",
+    "zones": [
+      "FLZ071",
+      "FLZ072",
+      "FLZ073",
+      "FLZ074",
+      "FLZ172",
+      "FLZ173",
+      "FLZ174"
+    ],
+    "endsAtMs": 1787180400000,
+    "expireAtMs": 1787202000000
+  },
+  "vtec_KLBF_SV_W_0364": {
+    "tier": "severe",
+    "zones": [
+      "NEC071",
+      "NEC183"
+    ],
+    "endsAtMs": 1787156100000,
+    "expireAtMs": 1787177700000
   }
 }
