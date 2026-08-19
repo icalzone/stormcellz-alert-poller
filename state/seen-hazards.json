@@ -2972,5 +2972,116 @@
     ],
     "endsAtMs": 1787169600000,
     "expireAtMs": 1787191200000
+  },
+  "vtec_KOAX_SV_W_0372": {
+    "tier": "severe",
+    "zones": [
+      "IAC071",
+      "NEC025",
+      "NEC097",
+      "NEC109",
+      "NEC131"
+    ],
+    "endsAtMs": 1787170500000,
+    "expireAtMs": 1787192100000
+  },
+  "id_urn_oid_2.49.0.1.840.0.4885e30d8b89b99854a8f36bd57e2c6b5e4cd17d.001.1": {
+    "tier": "minor",
+    "zones": [
+      "WAC007",
+      "WAC017",
+      "WAC025",
+      "WAC047"
+    ],
+    "endsAtMs": 1787256000000,
+    "expireAtMs": 1787277600000
+  },
+  "vtec_KIND_FF_W_0079": {
+    "tier": "severe",
+    "zones": [
+      "INC015",
+      "INC067"
+    ],
+    "endsAtMs": 1787185800000,
+    "expireAtMs": 1787207400000
+  },
+  "vtec_KEAX_SV_W_0467": {
+    "tier": "severe",
+    "zones": [
+      "MOC005"
+    ],
+    "endsAtMs": 1787169600000,
+    "expireAtMs": 1787191200000
+  },
+  "vtec_KTAE_SV_W_0316": {
+    "tier": "severe",
+    "zones": [
+      "FLC005",
+      "FLC045"
+    ],
+    "endsAtMs": 1787169600000,
+    "expireAtMs": 1787191200000
+  },
+  "id_urn_oid_2.49.0.1.840.0.bf9ca6949e9c52f82b3795b8d367406b8dca75e7.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "COZ067",
+      "COZ068",
+      "COZ069",
+      "COZ070"
+    ],
+    "endsAtMs": 1787168700000,
+    "expireAtMs": 1787190300000
+  },
+  "vtec_KTAE_HT_Y_0022": {
+    "tier": "moderate",
+    "zones": [
+      "ALZ068",
+      "ALZ069",
+      "FLZ007",
+      "FLZ008",
+      "FLZ009",
+      "FLZ010",
+      "FLZ011",
+      "FLZ012",
+      "FLZ013",
+      "FLZ014",
+      "FLZ015",
+      "FLZ016",
+      "FLZ017",
+      "FLZ018",
+      "FLZ019",
+      "FLZ027",
+      "FLZ028",
+      "FLZ029",
+      "FLZ034",
+      "FLZ108",
+      "FLZ112",
+      "FLZ114",
+      "FLZ115",
+      "FLZ118",
+      "FLZ127",
+      "FLZ128",
+      "FLZ134",
+      "FLZ326",
+      "FLZ426",
+      "GAZ155",
+      "GAZ156",
+      "GAZ157",
+      "GAZ158",
+      "GAZ159",
+      "GAZ160",
+      "GAZ161"
+    ],
+    "endsAtMs": 1787270400000,
+    "expireAtMs": 1787292000000
+  },
+  "id_urn_oid_2.49.0.1.840.0.a51df50459205e599518a7fb6b87e44ceb4cef58.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ007"
+    ],
+    "endsAtMs": 1787168700000,
+    "expireAtMs": 1787190300000
   }
 }
