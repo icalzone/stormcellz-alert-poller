@@ -1736,5 +1736,59 @@
     ],
     "endsAtMs": 1787173200000,
     "expireAtMs": 1787194800000
+  },
+  "vtec_KLBF_SV_A_0599": {
+    "tier": "severe",
+    "zones": [
+      "NEC071",
+      "NEC183"
+    ],
+    "endsAtMs": 1787173200000,
+    "expireAtMs": 1787194800000
+  },
+  "vtec_KGID_SV_W_0264": {
+    "tier": "severe",
+    "zones": [
+      "NEC077",
+      "NEC175"
+    ],
+    "endsAtMs": 1787155200000,
+    "expireAtMs": 1787176800000
+  },
+  "vtec_KGID_SV_A_0599": {
+    "tier": "severe",
+    "zones": [
+      "NEC077",
+      "NEC081",
+      "NEC093",
+      "NEC121",
+      "NEC125",
+      "NEC143",
+      "NEC175",
+      "NEC185"
+    ],
+    "endsAtMs": 1787173200000,
+    "expireAtMs": 1787194800000
+  },
+  "vtec_KOAX_SV_A_0599": {
+    "tier": "severe",
+    "zones": [
+      "IAC071",
+      "NEC003",
+      "NEC011",
+      "NEC023",
+      "NEC025",
+      "NEC037",
+      "NEC109",
+      "NEC119",
+      "NEC131",
+      "NEC141",
+      "NEC153",
+      "NEC155",
+      "NEC159",
+      "NEC167"
+    ],
+    "endsAtMs": 1787173200000,
+    "expireAtMs": 1787194800000
   }
 }
