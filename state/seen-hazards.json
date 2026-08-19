@@ -2342,5 +2342,221 @@
     ],
     "endsAtMs": 1787160600000,
     "expireAtMs": 1787182200000
+  },
+  "vtec_KOUN_HT_Y_0040": {
+    "tier": "moderate",
+    "zones": [
+      "OKZ027",
+      "OKZ028",
+      "OKZ029",
+      "OKZ030",
+      "OKZ031",
+      "OKZ032",
+      "OKZ039",
+      "OKZ045",
+      "OKZ023",
+      "OKZ033",
+      "OKZ034",
+      "OKZ035",
+      "OKZ036",
+      "OKZ037",
+      "OKZ038",
+      "OKZ044",
+      "TXZ083",
+      "TXZ084",
+      "TXZ085",
+      "TXZ086",
+      "TXZ087",
+      "TXZ088",
+      "TXZ089",
+      "TXZ090"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
+  },
+  "vtec_KTSA_HT_Y_0040": {
+    "tier": "moderate",
+    "zones": [
+      "ARZ129",
+      "ARZ219",
+      "ARZ220",
+      "ARZ229",
+      "OKZ065",
+      "OKZ070",
+      "OKZ071",
+      "OKZ073",
+      "OKZ074",
+      "OKZ075",
+      "OKZ176",
+      "OKZ272",
+      "OKZ276"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
+  },
+  "vtec_KTSA_XH_W_0016": {
+    "tier": "severe",
+    "zones": [
+      "OKZ049",
+      "OKZ053"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
+  },
+  "vtec_KOUN_XH_W_0014": {
+    "tier": "severe",
+    "zones": [
+      "OKZ040",
+      "OKZ041",
+      "OKZ042",
+      "OKZ043",
+      "OKZ046",
+      "OKZ047",
+      "OKZ048",
+      "OKZ050",
+      "OKZ051",
+      "OKZ052"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
+  },
+  "vtec_KRAH_HT_Y_0027": {
+    "tier": "moderate",
+    "zones": [
+      "NCZ077",
+      "NCZ078",
+      "NCZ088",
+      "NCZ089"
+    ],
+    "endsAtMs": 1787270400000,
+    "expireAtMs": 1787292000000
+  },
+  "vtec_KGID_FF_W_0007": {
+    "tier": "severe",
+    "zones": [
+      "NEC077",
+      "NEC125"
+    ],
+    "endsAtMs": 1787184000000,
+    "expireAtMs": 1787205600000
+  },
+  "vtec_TJSJ_FA_Y_0218": {
+    "tier": "minor",
+    "zones": [
+      "PRC003",
+      "PRC005",
+      "PRC071",
+      "PRC099",
+      "PRC115",
+      "PRC131"
+    ],
+    "endsAtMs": 1787166000000,
+    "expireAtMs": 1787187600000
+  },
+  "vtec_KGID_SV_W_0270": {
+    "tier": "severe",
+    "zones": [
+      "NEC079",
+      "NEC081",
+      "NEC093",
+      "NEC121",
+      "NEC143",
+      "NEC185"
+    ],
+    "endsAtMs": 1787162400000,
+    "expireAtMs": 1787184000000
+  },
+  "id_urn_oid_2.49.0.1.840.0.fc9c448ecbc432bb13602327a716c6d181456f61.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ056",
+      "FLZ255",
+      "FLZ260"
+    ],
+    "endsAtMs": 1787162400000,
+    "expireAtMs": 1787184000000
+  },
+  "vtec_PGUM_SC_Y_0061": {
+    "tier": "minor",
+    "zones": [
+      "PMZ172"
+    ],
+    "endsAtMs": 1787295600000,
+    "expireAtMs": 1787317200000
+  },
+  "vtec_KMHX_HT_Y_0028": {
+    "tier": "moderate",
+    "zones": [
+      "NCZ091",
+      "NCZ090",
+      "NCZ092",
+      "NCZ094",
+      "NCZ193",
+      "NCZ194",
+      "NCZ195",
+      "NCZ196",
+      "NCZ198",
+      "NCZ199"
+    ],
+    "endsAtMs": 1787270400000,
+    "expireAtMs": 1787292000000
+  },
+  "vtec_KHNX_LW_Y_0024": {
+    "tier": "moderate",
+    "zones": [
+      "CAZ332"
+    ],
+    "endsAtMs": 1787194800000,
+    "expireAtMs": 1787216400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.57e4dabaecd4c3f4321aeb984a51c92661ccced5.001.1": {
+    "tier": "minor",
+    "zones": [
+      "AMZ712",
+      "AMZ742"
+    ],
+    "endsAtMs": 1787166000000,
+    "expireAtMs": 1787187600000
+  },
+  "vtec_KLCH_HT_Y_0017": {
+    "tier": "moderate",
+    "zones": [
+      "LAZ027",
+      "LAZ030",
+      "LAZ031",
+      "LAZ073",
+      "LAZ074",
+      "LAZ141",
+      "LAZ142",
+      "LAZ152",
+      "LAZ241",
+      "LAZ242",
+      "LAZ243",
+      "LAZ252",
+      "TXZ180",
+      "TXZ201",
+      "TXZ259",
+      "TXZ260",
+      "TXZ261",
+      "TXZ262",
+      "TXZ515",
+      "TXZ516",
+      "TXZ615",
+      "TXZ616",
+      "LAZ028",
+      "LAZ029",
+      "LAZ032",
+      "LAZ033",
+      "LAZ044",
+      "LAZ045",
+      "LAZ055",
+      "LAZ143",
+      "LAZ153",
+      "LAZ154",
+      "LAZ253",
+      "LAZ254"
+    ],
+    "endsAtMs": 1787274000000,
+    "expireAtMs": 1787295600000
   }
 }
