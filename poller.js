@@ -144,11 +144,20 @@ async function sendToTopic(messaging, topic, { title, body, data, collapseId, in
         'content-available': 1,
         'interruption-level': interruptionLevel || 'active',
       };
+  const headers = collapseId ? { 'apns-collapse-id': collapseId } : {};
+  if (clear) {
+    // Silent/data-only pushes need an explicit background push-type + priority 5, or APNs
+    // can deprioritize/drop them — verified against a real device (2026-08-20): without
+    // these headers the clear push still sent successfully but delivery to background-
+    // notification handling isn't guaranteed without them per Apple's docs.
+    headers['apns-push-type'] = 'background';
+    headers['apns-priority'] = '5';
+  }
   const message = {
     topic,
     data,
     apns: {
-      headers: collapseId ? { 'apns-collapse-id': collapseId } : {},
+      headers,
       payload: { aps },
     },
     android: { priority: 'high', notification: { channelId: 'weather_alerts' } },
