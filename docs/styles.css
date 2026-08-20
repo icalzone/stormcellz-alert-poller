@@ -64,6 +64,12 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   font-size: 15px;
 }
+.site-nav .brand-mark img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
 .site-nav .links a {
   color: var(--text-secondary);
   margin-left: 24px;
@@ -87,6 +93,12 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   font-size: 40px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+.hero-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
 }
 .hero h1 {
   font-size: clamp(32px, 5vw, 48px);
