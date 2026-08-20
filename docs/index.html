@@ -1,72 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StormCellz — Weather, without the noise</title>
-  <meta name="description" content="StormCellz is a native iOS weather app combining NWS, WeatherKit, and personal weather stations with fast severe weather alerts." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StormCellz — Serious Weather, Beautiful Design</title>
+  <meta name="description" content="StormCellz is a native iOS weather app built on National Weather Service data, with radar, severe weather alerts, and a beautiful design.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site">
-    <div class="brand"><span class="dot"></span> StormCellz</div>
-    <nav class="site">
-      <a href="privacy.html">Privacy</a>
+  <div class="wrap">
+    <nav class="site-nav">
+      <div class="brand">
+        <span class="brand-mark">⛈️</span>
+        StormCellz
+      </div>
+      <div class="links">
+        <a href="legal.html#privacy">Privacy</a>
+        <a href="legal.html#terms">Terms</a>
+      </div>
     </nav>
-  </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h1>Weather, without the noise.</h1>
+    <header class="hero">
+      <div class="hero-icon">⛈️</div>
+      <h1>Serious weather,<br>beautiful design.</h1>
       <p class="tagline">
-        StormCellz blends National Weather Service data, Apple WeatherKit, and your own
-        personal weather station into one fast, native iOS app — with severe weather
-        alerts that reach you the moment they're issued.
+        A native iOS weather app built on National Weather Service data —
+        with radar, severe weather alerts, and a clean, modern interface.
       </p>
-      <div class="cta-row">
-        <span class="badge">Coming soon to the App Store</span>
-        <a class="badge muted" href="privacy.html">Read the privacy policy</a>
+      <div class="badge-row">
+        <!-- TODO: replace with the real App Store badge/link once StormCellz is live. -->
+        <span class="store-badge disabled">Coming soon to the App Store</span>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="feature-card">
+        <span class="icon">📡</span>
+        <h3>Multi-Source Weather</h3>
+        <p>Aggregates NWS, WeatherKit, and Open-Meteo so you get the most accurate forecast available for your location.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">🌩️</span>
+        <h3>Live Radar</h3>
+        <p>High-resolution NOAA radar with overlays for storm tracking, echo tops, and more.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">📍</span>
+        <h3>Saved Locations</h3>
+        <p>Track weather for multiple places at once — home, work, or wherever you're headed next.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">🚨</span>
+        <h3>Severe Weather Alerts</h3>
+        <p>Get notified the moment the National Weather Service issues a watch or warning near you.</p>
       </div>
     </section>
 
-    <h2 class="section-title">Built for people who watch the sky</h2>
-    <div class="features">
-      <div class="card">
-        <span class="icon">⛈️</span>
-        <h3>Multi-source forecasts</h3>
-        <p>NWS, WeatherKit, and OpenWeather combined into one accurate, unified forecast — hourly, daily, and right now.</p>
+    <footer class="site-footer">
+      <div>© <span id="year"></span> StormCellz. All rights reserved.</div>
+      <div class="links">
+        <a href="legal.html#privacy">Privacy Policy</a>
+        <a href="legal.html#terms">Terms of Use</a>
       </div>
-      <div class="card">
-        <span class="icon">🔔</span>
-        <h3>Instant severe alerts</h3>
-        <p>Push notifications for warnings and watches near your saved locations, delivered the moment NWS issues them.</p>
-      </div>
-      <div class="card">
-        <span class="icon">📡</span>
-        <h3>Personal weather stations</h3>
-        <p>Connect a Tempest station for hyperlocal observations — live conditions straight from your backyard.</p>
-      </div>
-      <div class="card">
-        <span class="icon">📍</span>
-        <h3>Saved locations</h3>
-        <p>Track weather anywhere that matters to you — home, work, family — all in one swipeable list.</p>
-      </div>
-      <div class="card">
-        <span class="icon">🗺️</span>
-        <h3>Live radar</h3>
-        <p>NOAA radar imagery layered right into the app, no third-party trackers involved.</p>
-      </div>
-      <div class="card">
-        <span class="icon">🔒</span>
-        <h3>No account, no ad tracking</h3>
-        <p>No login required. No data sold. See exactly what's collected and why in the privacy policy.</p>
-      </div>
-    </div>
-  </main>
+    </footer>
+  </div>
 
-  <footer class="site">
-    <span>&copy; 2026 StormCellz</span>
-    <span><a href="privacy.html">Privacy Policy</a> &middot; <a href="mailto:calvin@ells-family.com">calvin@ells-family.com</a></span>
-  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

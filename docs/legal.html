@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StormCellz — Privacy Policy &amp; Terms of Use</title>
+  <meta name="description" content="StormCellz privacy policy and terms of use, including our third-party weather data disclaimer.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap legal-doc">
+    <nav class="site-nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⛈️</span>
+        StormCellz
+      </a>
+    </nav>
+
+    <h1>Privacy Policy &amp; Terms of Use</h1>
+    <!-- TODO: update this date whenever the policy text changes. -->
+    <p class="updated">Last updated: August 20, 2026</p>
+
+    <div class="toc">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+      <a href="#data-disclaimer">Weather Data Disclaimer</a>
+    </div>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+
+      <h3>Information we collect</h3>
+      <ul>
+        <li><strong>Location.</strong> StormCellz uses your device's location (or a location you search for) to fetch weather data for that area. Saved locations are stored on your device.</li>
+        <li><strong>Push notification data.</strong> If you enable severe weather alerts, we register your device with Firebase Cloud Messaging and associate it with the locations you've chosen to receive alerts for, so we can deliver relevant notifications.</li>
+        <li><strong>Access codes.</strong> If you unlock friends or developer access, the app stores that unlock state on your device. We do not collect any payment or account information — StormCellz has no subscriptions.</li>
+      </ul>
+
+      <h3>How we use it</h3>
+      <p>
+        Location data is sent to our weather data providers (see the
+        <a href="#data-disclaimer">Weather Data Disclaimer</a> below) solely to retrieve forecasts, observations,
+        and alerts for that location. Push notification registration is used only to deliver the severe weather
+        alerts you've opted into.
+      </p>
+
+      <h3>What we don't do</h3>
+      <p>We do not sell your data. We do not share your location or usage data with advertisers.</p>
+
+      <h3>Contact</h3>
+      <p>Questions about this policy? Contact us at <a href="mailto:support@ells.family">support@ells.family</a>.</p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of Use</h2>
+
+      <h3>Acceptable use</h3>
+      <p>
+        StormCellz is provided for personal, non-commercial use. You agree not to misuse the app, attempt to
+        circumvent its access controls, or use it in any way that violates applicable law.
+      </p>
+
+      <h3>No warranty</h3>
+      <p>
+        StormCellz is provided "as is," without warranty of any kind, express or implied, including but not
+        limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.
+      </p>
+
+      <h3>Limitation of liability</h3>
+      <p>
+        To the fullest extent permitted by law, StormCellz and its developer shall not be liable for any indirect,
+        incidental, special, consequential, or punitive damages, or any loss of property, revenue, or data,
+        arising from your use of the app.
+      </p>
+
+      <h3>Changes</h3>
+      <p>We may update these terms from time to time. Continued use of the app after a change constitutes acceptance of the updated terms.</p>
+    </section>
+
+    <section id="data-disclaimer" class="disclaimer">
+      <h2>Weather Data Disclaimer</h2>
+      <p>
+        StormCellz aggregates and displays weather data from third-party sources, including the
+        <strong>National Weather Service (NWS)</strong>, <strong>Apple WeatherKit</strong>, and
+        <strong>Open-Meteo</strong>. We do not generate this data ourselves, and we do not control its accuracy,
+        completeness, timeliness, or availability.
+      </p>
+      <p>
+        Weather forecasts are inherently uncertain. StormCellz and its developer are not liable for any decisions
+        made, or damages, injuries, or losses incurred, based on data displayed in the app — including during
+        severe weather events.
+      </p>
+      <p>
+        <strong>For life-safety decisions during severe weather, always consult official National Weather Service
+        alerts and warnings directly at
+        <a href="https://www.weather.gov" target="_blank" rel="noopener">weather.gov</a>, or your local emergency
+        management authority — do not rely solely on this app.</strong>
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> StormCellz. All rights reserved.</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
