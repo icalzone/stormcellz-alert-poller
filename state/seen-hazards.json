@@ -2310,14 +2310,6 @@
     "endsAtMs": 1787274000000,
     "expireAtMs": 1787295600000
   },
-  "id_urn_oid_2.49.0.1.840.0.1adbb16329552745a4ec3a80cb724dd0d9132f52.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "AZZ533"
-    ],
-    "endsAtMs": 1787218200000,
-    "expireAtMs": 1787239800000
-  },
   "id_urn_oid_2.49.0.1.840.0.928d88ed7a93c5eceb75fec94d4f730fe75ffbcc.001.1": {
     "tier": "moderate",
     "zones": [
@@ -2341,19 +2333,6 @@
     ],
     "endsAtMs": 1787226300000,
     "expireAtMs": 1787247900000
-  },
-  "id_urn_oid_2.49.0.1.840.0.4df63dde664f1b53535c301b2a07c5c9aaa77c67.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "TNZ020",
-      "TNZ021",
-      "TNZ022",
-      "TNZ052",
-      "TNZ054",
-      "TNZ055"
-    ],
-    "endsAtMs": 1787218200000,
-    "expireAtMs": 1787239800000
   },
   "vtec_KILN_FL_W_0052": {
     "tier": "severe",
@@ -2478,16 +2457,6 @@
     "endsAtMs": 1787220900000,
     "expireAtMs": 1787242500000
   },
-  "id_urn_oid_2.49.0.1.840.0.b0a529e26d7316e6bf0114d6dbcc6c0e15c7d7b0.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "AZZ538",
-      "AZZ539",
-      "AZZ559"
-    ],
-    "endsAtMs": 1787219100000,
-    "expireAtMs": 1787240700000
-  },
   "vtec_KPAH_FF_W_0088": {
     "tier": "severe",
     "zones": [
@@ -2508,17 +2477,6 @@
     ],
     "endsAtMs": 1787228100000,
     "expireAtMs": 1787249700000
-  },
-  "id_urn_oid_2.49.0.1.840.0.a0315bd7abcf55d52ed46f362d38c21a59db51e6.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "KYZ077",
-      "KYZ078",
-      "KYZ081",
-      "KYZ082"
-    ],
-    "endsAtMs": 1787219100000,
-    "expireAtMs": 1787240700000
   },
   "vtec_PGUM_TR_A_4017": {
     "tier": "severe",
@@ -3426,5 +3384,26 @@
     ],
     "endsAtMs": 1787248800000,
     "expireAtMs": 1787270400000
+  },
+  "vtec_KCTP_FF_W_0063": {
+    "tier": "severe",
+    "zones": [
+      "PAC021",
+      "PAC027",
+      "PAC033"
+    ],
+    "endsAtMs": 1787251500000,
+    "expireAtMs": 1787273100000
+  },
+  "vtec_KPBZ_FF_W_0123": {
+    "tier": "severe",
+    "zones": [
+      "PAC005",
+      "PAC063",
+      "PAC065",
+      "PAC129"
+    ],
+    "endsAtMs": 1787250600000,
+    "expireAtMs": 1787272200000
   }
 }
