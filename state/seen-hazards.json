@@ -2726,59 +2726,6 @@
     "endsAtMs": 1787364000000,
     "expireAtMs": 1787385600000
   },
-  "vtec_KARX_SV_W_0182": {
-    "tier": "severe",
-    "zones": [
-      "IAC191",
-      "MNC045"
-    ],
-    "endsAtMs": 1787302800000,
-    "expireAtMs": 1787324400000
-  },
-  "id_urn_oid_2.49.0.1.840.0.9a6e2abb5c15de0389edf164d303aeaf6a7f1a77.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "TNZ039",
-      "TNZ040",
-      "TNZ070",
-      "TNZ073"
-    ],
-    "endsAtMs": 1787303700000,
-    "expireAtMs": 1787325300000
-  },
-  "id_urn_oid_2.49.0.1.840.0.38479fb39eda830ba9171ec8a65af4c8ab5b9241.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "ALZ026"
-    ],
-    "endsAtMs": 1787302800000,
-    "expireAtMs": 1787324400000
-  },
-  "id_urn_oid_2.49.0.1.840.0.29bf1bc85f7f3c643307b76ac74d6290bd88fdb2.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "GAZ010",
-      "GAZ017",
-      "GAZ018",
-      "GAZ026",
-      "NCZ059",
-      "NCZ062",
-      "SCZ101",
-      "SCZ104"
-    ],
-    "endsAtMs": 1787302800000,
-    "expireAtMs": 1787324400000
-  },
-  "vtec_KJAN_SV_W_0322": {
-    "tier": "severe",
-    "zones": [
-      "MSC025",
-      "MSC087",
-      "MSC105"
-    ],
-    "endsAtMs": 1787303700000,
-    "expireAtMs": 1787325300000
-  },
   "vtec_KGSP_SV_W_0267": {
     "tier": "severe",
     "zones": [
@@ -4247,5 +4194,24 @@
     ],
     "endsAtMs": 1787342400000,
     "expireAtMs": 1787364000000
+  },
+  "id_urn_oid_2.49.0.1.840.0.def7ed8dab4c093c7b97146e5e63fc79520491be.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "VAZ011",
+      "VAZ014",
+      "VAZ017",
+      "VAZ018",
+      "VAZ019",
+      "VAZ022",
+      "VAZ023",
+      "VAZ033",
+      "VAZ034",
+      "VAZ043",
+      "VAZ044",
+      "WVZ044"
+    ],
+    "endsAtMs": 1787328900000,
+    "expireAtMs": 1787350500000
   }
 }
