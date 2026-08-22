@@ -1918,15 +1918,6 @@
     "endsAtMs": 1787450400000,
     "expireAtMs": 1787472000000
   },
-  "vtec_KCHS_MA_W_0102": {
-    "tier": "severe",
-    "zones": [
-      "AMZ364",
-      "AMZ384"
-    ],
-    "endsAtMs": 1787370300000,
-    "expireAtMs": 1787391900000
-  },
   "vtec_KILX_FF_W_0081": {
     "tier": "severe",
     "zones": [
@@ -2009,23 +2000,6 @@
     "endsAtMs": 1787371200000,
     "expireAtMs": 1787392800000
   },
-  "vtec_KCYS_SV_W_0274": {
-    "tier": "severe",
-    "zones": [
-      "NEC033",
-      "NEC105"
-    ],
-    "endsAtMs": 1787370300000,
-    "expireAtMs": 1787391900000
-  },
-  "vtec_KILM_MA_W_0065": {
-    "tier": "severe",
-    "zones": [
-      "AMZ284"
-    ],
-    "endsAtMs": 1787370300000,
-    "expireAtMs": 1787391900000
-  },
   "vtec_KGSP_FA_Y_0097": {
     "tier": "minor",
     "zones": [
@@ -2033,18 +2007,6 @@
     ],
     "endsAtMs": 1787388300000,
     "expireAtMs": 1787409900000
-  },
-  "id_urn_oid_2.49.0.1.840.0.ea5d4e2be6b14cb7d65276de188ab2a9d65bc265.001.1": {
-    "tier": "minor",
-    "zones": [
-      "GMZ553",
-      "GMZ554",
-      "GMZ572",
-      "GMZ575",
-      "GMZ577"
-    ],
-    "endsAtMs": 1787370300000,
-    "expireAtMs": 1787391900000
   },
   "vtec_KCYS_FA_Y_0014": {
     "tier": "minor",
@@ -2064,18 +2026,6 @@
     ],
     "endsAtMs": 1787475600000,
     "expireAtMs": 1787497200000
-  },
-  "vtec_KLCH_MA_W_0073": {
-    "tier": "severe",
-    "zones": [
-      "GMZ436",
-      "GMZ452",
-      "GMZ455",
-      "GMZ472",
-      "GMZ475"
-    ],
-    "endsAtMs": 1787370300000,
-    "expireAtMs": 1787391900000
   },
   "vtec_KBOU_SV_A_0613": {
     "tier": "severe",
@@ -3261,5 +3211,27 @@
     ],
     "endsAtMs": 1787540400000,
     "expireAtMs": 1787562000000
+  },
+  "id_urn_oid_2.49.0.1.840.0.9fb3027b9ef316b564152b75084f7e96bb08e3a9.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "INZ017",
+      "INZ024",
+      "INZ025",
+      "INZ216"
+    ],
+    "endsAtMs": 1787394600000,
+    "expireAtMs": 1787416200000
+  },
+  "id_urn_oid_2.49.0.1.840.0.54707cc112ce002cf47e5e943752aa058a2507ff.001.1": {
+    "tier": "minor",
+    "zones": [
+      "GUC010",
+      "MPC100",
+      "MPC110",
+      "MPC120"
+    ],
+    "endsAtMs": 1787478300000,
+    "expireAtMs": 1787499900000
   }
 }
