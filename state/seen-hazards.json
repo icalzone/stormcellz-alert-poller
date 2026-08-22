@@ -2070,14 +2070,6 @@
     "endsAtMs": 1787379300000,
     "expireAtMs": 1787400900000
   },
-  "id_urn_oid_2.49.0.1.840.0.bc3e0b3fd8c21ef38c08c9364184f3a78a605509.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "SDZ047"
-    ],
-    "endsAtMs": 1787377500000,
-    "expireAtMs": 1787399100000
-  },
   "vtec_KILM_MA_W_0071": {
     "tier": "severe",
     "zones": [
@@ -3333,5 +3325,33 @@
     ],
     "endsAtMs": 1787400000000,
     "expireAtMs": 1787421600000
+  },
+  "id_urn_oid_2.49.0.1.840.0.ffaa3a1105f6e486af22bae3e55369cbec75c757.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "MIZ059",
+      "MIZ066",
+      "MIZ067"
+    ],
+    "endsAtMs": 1787401800000,
+    "expireAtMs": 1787423400000
+  },
+  "vtec_KOUN_SV_W_0861": {
+    "tier": "severe",
+    "zones": [
+      "OKC125",
+      "OKC133"
+    ],
+    "endsAtMs": 1787401800000,
+    "expireAtMs": 1787423400000
+  },
+  "vtec_KOUN_SV_W_0862": {
+    "tier": "severe",
+    "zones": [
+      "OKC103",
+      "OKC119"
+    ],
+    "endsAtMs": 1787401800000,
+    "expireAtMs": 1787423400000
   }
 }
