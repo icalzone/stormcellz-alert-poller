@@ -8,17 +8,6 @@
     "endsAtMs": 1787508000000,
     "expireAtMs": 1787529600000
   },
-  "vtec_KIND_FL_W_0151": {
-    "tier": "severe",
-    "zones": [
-      "INC045",
-      "INC121",
-      "INC165",
-      "INC171"
-    ],
-    "endsAtMs": 1787390700000,
-    "expireAtMs": 1787412300000
-  },
   "vtec_KIND_FL_W_0174": {
     "tier": "severe",
     "zones": [
@@ -1991,26 +1980,6 @@
     "endsAtMs": 1787702400000,
     "expireAtMs": 1787724000000
   },
-  "vtec_KMHX_MA_W_0325": {
-    "tier": "severe",
-    "zones": [
-      "AMZ135",
-      "AMZ152"
-    ],
-    "endsAtMs": 1787391000000,
-    "expireAtMs": 1787412600000
-  },
-  "vtec_KCLE_MA_W_0098": {
-    "tier": "severe",
-    "zones": [
-      "LEZ147",
-      "LEZ148",
-      "LEZ167",
-      "LEZ168"
-    ],
-    "endsAtMs": 1787391000000,
-    "expireAtMs": 1787412600000
-  },
   "vtec_KFWD_HT_Y_0026": {
     "tier": "moderate",
     "zones": [
@@ -2193,17 +2162,6 @@
     ],
     "endsAtMs": 1787392800000,
     "expireAtMs": 1787414400000
-  },
-  "vtec_KPAH_SV_W_0350": {
-    "tier": "severe",
-    "zones": [
-      "ILC055",
-      "ILC065",
-      "ILC081",
-      "ILC191"
-    ],
-    "endsAtMs": 1787391000000,
-    "expireAtMs": 1787412600000
   },
   "vtec_KCHS_MA_W_0103": {
     "tier": "severe",
@@ -3267,5 +3225,42 @@
     ],
     "endsAtMs": 1787486400000,
     "expireAtMs": 1787508000000
+  },
+  "id_urn_oid_2.49.0.1.840.0.67ac03d39e9eeacce4e5159ea0dd203d3247a1b9.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ140",
+      "FLZ240",
+      "FLZ340"
+    ],
+    "endsAtMs": 1787415300000,
+    "expireAtMs": 1787436900000
+  },
+  "vtec_KDTX_FA_Y_0016": {
+    "tier": "minor",
+    "zones": [
+      "MIC161"
+    ],
+    "endsAtMs": 1787423400000,
+    "expireAtMs": 1787445000000
+  },
+  "vtec_KCRP_HT_Y_0013": {
+    "tier": "moderate",
+    "zones": [
+      "TXZ234",
+      "TXZ242",
+      "TXZ243",
+      "TXZ244",
+      "TXZ245",
+      "TXZ246",
+      "TXZ247",
+      "TXZ342",
+      "TXZ343",
+      "TXZ344",
+      "TXZ346",
+      "TXZ347"
+    ],
+    "endsAtMs": 1787443200000,
+    "expireAtMs": 1787464800000
   }
 }
