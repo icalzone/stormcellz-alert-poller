@@ -2152,26 +2152,6 @@
     "endsAtMs": 1787536800000,
     "expireAtMs": 1787558400000
   },
-  "vtec_KLWX_MA_W_0249": {
-    "tier": "severe",
-    "zones": [
-      "ANZ533",
-      "ANZ541",
-      "ANZ542"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
-  },
-  "vtec_KLWX_MA_W_0248": {
-    "tier": "severe",
-    "zones": [
-      "ANZ534",
-      "ANZ537",
-      "ANZ543"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
-  },
   "id_urn_oid_2.49.0.1.840.0.5b98630a552871ef7d00c907f34d8f5ae7ca8858.001.1": {
     "tier": "minor",
     "zones": [
@@ -2213,23 +2193,6 @@
     ],
     "endsAtMs": 1787533200000,
     "expireAtMs": 1787554800000
-  },
-  "id_urn_oid_2.49.0.1.840.0.cbd6923780e2ff070965daf1f935c856404d8522.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "COZ046"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
-  },
-  "id_urn_oid_2.49.0.1.840.0.392b374b6b3d4c3c74edb6cb2bfce3c12681a66a.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "WYZ024",
-      "WYZ026"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
   },
   "vtec_KEWX_HT_Y_0008": {
     "tier": "moderate",
@@ -2297,26 +2260,6 @@
     ],
     "endsAtMs": 1787533200000,
     "expireAtMs": 1787554800000
-  },
-  "id_urn_oid_2.49.0.1.840.0.3d86fedc83d30498e7e67e35157c2f3257dbde90.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "WYZ055",
-      "WYZ058"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
-  },
-  "id_urn_oid_2.49.0.1.840.0.7e74fcbe8f0754f8ab6e1990977f5c3ac8d7b608.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "IDZ005",
-      "IDZ006",
-      "IDZ007",
-      "MTZ004"
-    ],
-    "endsAtMs": 1787460300000,
-    "expireAtMs": 1787481900000
   },
   "vtec_KAMA_XH_W_0007": {
     "tier": "severe",
@@ -3344,5 +3287,16 @@
     ],
     "endsAtMs": 1787544000000,
     "expireAtMs": 1787565600000
+  },
+  "id_urn_oid_2.49.0.1.840.0.c25ef27d003d0f8983bc767dedb1aa1fda7c483f.001.1": {
+    "tier": "minor",
+    "zones": [
+      "ANZ338",
+      "ANZ345",
+      "ANZ355",
+      "ANZ385"
+    ],
+    "endsAtMs": 1787484600000,
+    "expireAtMs": 1787506200000
   }
 }
