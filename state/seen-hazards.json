@@ -2122,14 +2122,6 @@
     "endsAtMs": 1787491800000,
     "expireAtMs": 1787513400000
   },
-  "vtec_KOTX_SV_W_0028": {
-    "tier": "severe",
-    "zones": [
-      "WAC019"
-    ],
-    "endsAtMs": 1787470200000,
-    "expireAtMs": 1787491800000
-  },
   "vtec_KDTX_BH_S_0009": {
     "tier": "moderate",
     "zones": [
@@ -2137,24 +2129,6 @@
     ],
     "endsAtMs": 1787601600000,
     "expireAtMs": 1787623200000
-  },
-  "vtec_KOTX_SV_W_0027": {
-    "tier": "severe",
-    "zones": [
-      "WAC065"
-    ],
-    "endsAtMs": 1787469300000,
-    "expireAtMs": 1787490900000
-  },
-  "id_urn_oid_2.49.0.1.840.0.a30671c27385297184ba6f924340458c698a6736.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "LAZ001",
-      "LAZ002",
-      "LAZ010"
-    ],
-    "endsAtMs": 1787469300000,
-    "expireAtMs": 1787490900000
   },
   "vtec_KCLE_SV_W_0247": {
     "tier": "severe",
@@ -3120,17 +3094,6 @@
     "endsAtMs": 1787518800000,
     "expireAtMs": 1787540400000
   },
-  "vtec_KOKX_MA_W_0094": {
-    "tier": "severe",
-    "zones": [
-      "ANZ350",
-      "ANZ353",
-      "ANZ380",
-      "ANZ383"
-    ],
-    "endsAtMs": 1787492700000,
-    "expireAtMs": 1787514300000
-  },
   "vtec_KTAE_MA_W_0320": {
     "tier": "severe",
     "zones": [
@@ -3164,5 +3127,43 @@
     ],
     "endsAtMs": 1787529600000,
     "expireAtMs": 1787551200000
+  },
+  "id_urn_oid_2.49.0.1.840.0.533e8072c4c4e79ed11d8beb1a55215496156b7e.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "SDZ047"
+    ],
+    "endsAtMs": 1787492700000,
+    "expireAtMs": 1787514300000
+  },
+  "vtec_PGUM_SC_Y_0061": {
+    "tier": "minor",
+    "zones": [
+      "PMZ171"
+    ],
+    "endsAtMs": 1787511600000,
+    "expireAtMs": 1787533200000
+  },
+  "vtec_PGUM_SC_Y_0062": {
+    "tier": "minor",
+    "zones": [
+      "PMZ151",
+      "PMZ152",
+      "PMZ153",
+      "PMZ154"
+    ],
+    "endsAtMs": 1787554800000,
+    "expireAtMs": 1787576400000
+  },
+  "vtec_PGUM_SU_Y_0054": {
+    "tier": "minor",
+    "zones": [
+      "GUZ001",
+      "MPZ001",
+      "MPZ002",
+      "MPZ003"
+    ],
+    "endsAtMs": 1787551200000,
+    "expireAtMs": 1787572800000
   }
 }
