@@ -2230,23 +2230,6 @@
     "endsAtMs": 1787491800000,
     "expireAtMs": 1787513400000
   },
-  "vtec_KOKX_FA_Y_0110": {
-    "tier": "minor",
-    "zones": [
-      "NJC003",
-      "NJC013",
-      "NJC017",
-      "NJC031",
-      "NJC039",
-      "NYC005",
-      "NYC047",
-      "NYC061",
-      "NYC081",
-      "NYC085"
-    ],
-    "endsAtMs": 1787481900000,
-    "expireAtMs": 1787503500000
-  },
   "vtec_KPQR_SC_Y_0091": {
     "tier": "minor",
     "zones": [
