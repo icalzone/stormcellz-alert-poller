@@ -2258,14 +2258,6 @@
     "endsAtMs": 1787486400000,
     "expireAtMs": 1787508000000
   },
-  "id_urn_oid_2.49.0.1.840.0.5f62694db7bf13d6bb8402bf0ecd4af7ac59f87b.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "WAZ037"
-    ],
-    "endsAtMs": 1787472900000,
-    "expireAtMs": 1787494500000
-  },
   "id_urn_oid_2.49.0.1.840.0.c225540b99867d335534a322ad1da344c76fe236.001.1": {
     "tier": "moderate",
     "zones": [
@@ -3137,5 +3129,56 @@
     ],
     "endsAtMs": 1787496300000,
     "expireAtMs": 1787517900000
+  },
+  "id_urn_oid_2.49.0.1.840.0.8d991266db68f02fdd22e8fc0c85f9b4d3ab78f0.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "AKZ801",
+      "AKZ802",
+      "AKZ803"
+    ],
+    "endsAtMs": 1787551200000,
+    "expireAtMs": 1787572800000
+  },
+  "id_urn_oid_2.49.0.1.840.0.ea63e4a4685e10e0649e709d8170b79f8711d251.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "AKZ815",
+      "AKZ817",
+      "AKZ818",
+      "AKZ820",
+      "AKZ821"
+    ],
+    "endsAtMs": 1787551200000,
+    "expireAtMs": 1787572800000
+  },
+  "vtec_KMHX_MA_W_0332": {
+    "tier": "severe",
+    "zones": [
+      "AMZ186",
+      "AMZ188"
+    ],
+    "endsAtMs": 1787497200000,
+    "expireAtMs": 1787518800000
+  },
+  "id_urn_oid_2.49.0.1.840.0.a3f1c29e6e47bde6dc8a47a9aa75d327b003802b.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "MTZ002",
+      "MTZ003",
+      "MTZ043"
+    ],
+    "endsAtMs": 1787497200000,
+    "expireAtMs": 1787518800000
+  },
+  "id_urn_oid_2.49.0.1.840.0.7f7a77399a40dc0eeb687dd97e80272f3deb138f.001.1": {
+    "tier": "minor",
+    "zones": [
+      "ANZ331",
+      "ANZ332",
+      "ANZ340"
+    ],
+    "endsAtMs": 1787498100000,
+    "expireAtMs": 1787519700000
   }
 }
