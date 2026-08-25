@@ -1200,14 +1200,6 @@
     "endsAtMs": 1787637600000,
     "expireAtMs": 1787659200000
   },
-  "vtec_KSLC_FF_W_0086": {
-    "tier": "severe",
-    "zones": [
-      "UTC025"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
-  },
   "id_urn_oid_2.49.0.1.840.0.e9e660fce609598e53ce55f6ed8491eb0acf8d40.002.1": {
     "tier": "moderate",
     "zones": [
@@ -1694,28 +1686,6 @@
     "endsAtMs": 1787709600000,
     "expireAtMs": 1787731200000
   },
-  "id_urn_oid_2.49.0.1.840.0.5ff7009cac02d89fd2ad6ec032764a5bdde7efae.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "IDZ012",
-      "IDZ015",
-      "IDZ029",
-      "ORZ063",
-      "ORZ064"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
-  },
-  "id_urn_oid_2.49.0.1.840.0.85e5d49301fc2ad5511b0453f55c20347ea2e3d8.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "SDZ046",
-      "SDZ047",
-      "SDZ049"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
-  },
   "vtec_KMQT_SC_Y_0123": {
     "tier": "minor",
     "zones": [
@@ -1735,14 +1705,6 @@
     ],
     "endsAtMs": 1787652000000,
     "expireAtMs": 1787673600000
-  },
-  "vtec_KABR_SV_W_0229": {
-    "tier": "severe",
-    "zones": [
-      "SDC013"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
   },
   "vtec_KABR_FA_W_0022": {
     "tier": "severe",
@@ -1779,15 +1741,6 @@
     "endsAtMs": 1787634900000,
     "expireAtMs": 1787656500000
   },
-  "id_urn_oid_2.49.0.1.840.0.11a9298ef320c21820f5210d14024f1b581bbb94.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "OKZ001",
-      "TXZ001"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
-  },
   "id_urn_oid_2.49.0.1.840.0.1616887c5cbb23f01f7192fc2486e8b2d0b4f9f8.001.1": {
     "tier": "moderate",
     "zones": [
@@ -1796,14 +1749,6 @@
     ],
     "endsAtMs": 1787652000000,
     "expireAtMs": 1787673600000
-  },
-  "id_urn_oid_2.49.0.1.840.0.008ce2027f5f30eb7526b4dfec1479e32f4246df.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "SDZ007"
-    ],
-    "endsAtMs": 1787634000000,
-    "expireAtMs": 1787655600000
   },
   "vtec_KABR_SV_W_0233": {
     "tier": "severe",
@@ -2273,5 +2218,16 @@
     ],
     "endsAtMs": 1787655600000,
     "expireAtMs": 1787677200000
+  },
+  "vtec_KTAE_MA_W_0327": {
+    "tier": "severe",
+    "zones": [
+      "GMZ752",
+      "GMZ755",
+      "GMZ772",
+      "GMZ775"
+    ],
+    "endsAtMs": 1787661900000,
+    "expireAtMs": 1787683500000
   }
 }
