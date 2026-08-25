@@ -1667,17 +1667,6 @@
     "endsAtMs": 1787702400000,
     "expireAtMs": 1787724000000
   },
-  "vtec_KILM_MA_W_0081": {
-    "tier": "severe",
-    "zones": [
-      "AMZ254",
-      "AMZ256",
-      "AMZ280",
-      "AMZ284"
-    ],
-    "endsAtMs": 1787634900000,
-    "expireAtMs": 1787656500000
-  },
   "vtec_KABQ_HT_Y_0026": {
     "tier": "moderate",
     "zones": [
@@ -1714,15 +1703,6 @@
     "endsAtMs": 1787640300000,
     "expireAtMs": 1787661900000
   },
-  "vtec_KABR_SV_W_0231": {
-    "tier": "severe",
-    "zones": [
-      "SDC013",
-      "SDC045"
-    ],
-    "endsAtMs": 1787634900000,
-    "expireAtMs": 1787656500000
-  },
   "id_urn_oid_2.49.0.1.840.0.2c74cf6d30bdba860daa839ef1c7fd1d29dd161a.001.1": {
     "tier": "moderate",
     "zones": [
@@ -1732,14 +1712,6 @@
     ],
     "endsAtMs": 1787702400000,
     "expireAtMs": 1787724000000
-  },
-  "id_urn_oid_2.49.0.1.840.0.9c7752144cb2066895369bcc63f052df1b988e8c.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "SDZ041"
-    ],
-    "endsAtMs": 1787634900000,
-    "expireAtMs": 1787656500000
   },
   "id_urn_oid_2.49.0.1.840.0.1616887c5cbb23f01f7192fc2486e8b2d0b4f9f8.001.1": {
     "tier": "moderate",
@@ -2229,5 +2201,142 @@
     ],
     "endsAtMs": 1787661900000,
     "expireAtMs": 1787683500000
+  },
+  "vtec_PAFC_GL_W_2298": {
+    "tier": "moderate",
+    "zones": [
+      "PKZ784"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2301": {
+    "tier": "minor",
+    "zones": [
+      "PKZ787"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2303": {
+    "tier": "minor",
+    "zones": [
+      "PKZ761"
+    ],
+    "endsAtMs": 1787706000000,
+    "expireAtMs": 1787727600000
+  },
+  "vtec_PAFC_SC_Y_2302": {
+    "tier": "minor",
+    "zones": [
+      "PKZ760"
+    ],
+    "endsAtMs": 1787706000000,
+    "expireAtMs": 1787727600000
+  },
+  "vtec_PAFC_SC_Y_2300": {
+    "tier": "minor",
+    "zones": [
+      "PKZ786"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2304": {
+    "tier": "minor",
+    "zones": [
+      "PKZ767"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2296": {
+    "tier": "minor",
+    "zones": [
+      "PKZ780"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2297": {
+    "tier": "minor",
+    "zones": [
+      "PKZ781"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2299": {
+    "tier": "minor",
+    "zones": [
+      "PKZ785"
+    ],
+    "endsAtMs": 1787792400000,
+    "expireAtMs": 1787814000000
+  },
+  "vtec_PAFC_SC_Y_2292": {
+    "tier": "minor",
+    "zones": [
+      "PKZ750"
+    ],
+    "endsAtMs": 1787749200000,
+    "expireAtMs": 1787770800000
+  },
+  "vtec_PAFC_SC_Y_2293": {
+    "tier": "minor",
+    "zones": [
+      "PKZ751"
+    ],
+    "endsAtMs": 1787706000000,
+    "expireAtMs": 1787727600000
+  },
+  "vtec_PAFC_SC_Y_2294": {
+    "tier": "minor",
+    "zones": [
+      "PKZ756"
+    ],
+    "endsAtMs": 1787706000000,
+    "expireAtMs": 1787727600000
+  },
+  "vtec_PAFC_SC_Y_2295": {
+    "tier": "minor",
+    "zones": [
+      "PKZ757"
+    ],
+    "endsAtMs": 1787706000000,
+    "expireAtMs": 1787727600000
+  },
+  "vtec_KJAX_FA_Y_0189": {
+    "tier": "minor",
+    "zones": [
+      "FLC083",
+      "FLC107"
+    ],
+    "endsAtMs": 1787668200000,
+    "expireAtMs": 1787689800000
+  },
+  "id_urn_oid_2.49.0.1.840.0.396e6806a3ab8ab8ae3f02d30bddbb05c26a505a.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "NCZ080",
+      "NCZ094",
+      "NCZ193",
+      "NCZ194",
+      "NCZ195",
+      "NCZ196"
+    ],
+    "endsAtMs": 1787662800000,
+    "expireAtMs": 1787684400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.2e33b330763d1f2a15b90db5f5d86cfe994816ca.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "FLZ038",
+      "FLZ137",
+      "FLZ140",
+      "FLZ237"
+    ],
+    "endsAtMs": 1787659200000,
+    "expireAtMs": 1787680800000
   }
 }
