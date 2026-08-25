@@ -1716,26 +1716,6 @@
     "endsAtMs": 1787731200000,
     "expireAtMs": 1787752800000
   },
-  "id_urn_oid_2.49.0.1.840.0.1520a2db0c3019b810fc7bbebb3fee8bbf6431d2.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "NEZ004",
-      "NEZ094"
-    ],
-    "endsAtMs": 1787643900000,
-    "expireAtMs": 1787665500000
-  },
-  "id_urn_oid_2.49.0.1.840.0.e61b1de959acb6b322508900ef19c248f31c83fa.001.1": {
-    "tier": "moderate",
-    "zones": [
-      "NEZ004",
-      "NEZ022",
-      "NEZ023",
-      "NEZ035"
-    ],
-    "endsAtMs": 1787643000000,
-    "expireAtMs": 1787664600000
-  },
   "vtec_KFGZ_FF_W_0132": {
     "tier": "severe",
     "zones": [
@@ -2386,5 +2366,77 @@
     ],
     "endsAtMs": 1787749200000,
     "expireAtMs": 1787770800000
+  },
+  "vtec_KTAE_MA_W_0330": {
+    "tier": "severe",
+    "zones": [
+      "GMZ770",
+      "GMZ772"
+    ],
+    "endsAtMs": 1787673600000,
+    "expireAtMs": 1787695200000
+  },
+  "vtec_KTAE_MA_W_0329": {
+    "tier": "severe",
+    "zones": [
+      "GMZ730",
+      "GMZ755",
+      "GMZ765",
+      "GMZ775"
+    ],
+    "endsAtMs": 1787670900000,
+    "expireAtMs": 1787692500000
+  },
+  "vtec_KGLD_SV_W_0298": {
+    "tier": "severe",
+    "zones": [
+      "KSC039",
+      "KSC065",
+      "KSC137",
+      "KSC179"
+    ],
+    "endsAtMs": 1787667300000,
+    "expireAtMs": 1787688900000
+  },
+  "id_urn_oid_2.49.0.1.840.0.0fb8799c7e68372e46bd31231d1152fa520a0687.001.1": {
+    "tier": "minor",
+    "zones": [
+      "GMZ031",
+      "GMZ042"
+    ],
+    "endsAtMs": 1787667300000,
+    "expireAtMs": 1787688900000
+  },
+  "id_urn_oid_2.49.0.1.840.0.42ee567330daed69e555ae775fc6cb5b0f8fd036.001.1": {
+    "tier": "minor",
+    "zones": [
+      "CAZ373",
+      "CAZ380",
+      "CAZ378",
+      "CAZ368",
+      "CAZ548",
+      "CAZ088",
+      "CAZ375",
+      "CAZ372",
+      "CAZ379"
+    ],
+    "endsAtMs": 1787972400000,
+    "expireAtMs": 1787994000000
+  },
+  "vtec_KGLD_FA_Y_0038": {
+    "tier": "minor",
+    "zones": [
+      "NEC145"
+    ],
+    "endsAtMs": 1787674500000,
+    "expireAtMs": 1787696100000
+  },
+  "id_urn_oid_2.49.0.1.840.0.25d178c39fc39b1e2cb6bdc2ad50ebdc6bb39e7f.001.1": {
+    "tier": "minor",
+    "zones": [
+      "GMZ575"
+    ],
+    "endsAtMs": 1787667300000,
+    "expireAtMs": 1787688900000
   }
 }
