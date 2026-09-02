@@ -3,7 +3,24 @@
 Polls the National Weather Service's active-alerts feed every 5 minutes and pushes new
 severe weather alerts to [StormCellz](https://github.com/) via Firebase Cloud Messaging
 topics. No server, no Firestore, no Cloud Functions — this repo's whole job is to run a
-free GitHub Actions cron job and call the FCM Admin API directly.
+free GitHub Actions job and call the FCM Admin API directly.
+
+## Scheduling: why the job loops instead of relying on cron
+
+GitHub runs `schedule` events on a best-effort basis and heavily deprioritises
+high-frequency crons. Measured on this repo, the `*/5 * * * *` schedule actually fired
+every **1.7–5.3 hours**. A Severe Thunderstorm Warning typically lasts 30–60 minutes, so
+warnings were beginning and expiring between runs and were never pushed at all.
+
+So the cadence no longer depends on the trigger. Each run polls on its own loop every
+5 minutes for ~5h40m, then exits before the 6-hour runner cap. The cron is kept only to
+keep a run *queued*: with `concurrency.group: nws-poller` and `cancel-in-progress: false`,
+GitHub holds at most one pending run and starts it the moment the current one ends, so
+coverage is continuous.
+
+Dedup state is committed every 6th poll (~30 min) rather than every poll — committing each
+iteration would be ~300 commits/day of a 150KB file. The trade-off is that a cancelled job
+can lose up to 30 minutes of state, which re-notifies at most that window's hazards once.
 
 ## Why this exists
 

@@ -1,5 +1,14 @@
 name: Poll NWS alerts
 
+# GitHub runs `schedule` events on a best-effort basis and heavily deprioritises
+# high-frequency crons. Measured on this repo, a `*/5` schedule actually fired every
+# 1.7–5.3 hours — so a Severe Thunderstorm Warning (typically 30–60 minutes) began and
+# expired between runs and was never pushed at all.
+#
+# The fix is to stop depending on the trigger cadence: each run polls on its own loop for
+# ~5h40m. The `*/5` cron is kept only to keep a run queued. With the concurrency group
+# below, GitHub holds at most one pending run, and it starts the moment the current one
+# ends — so coverage is continuous rather than a function of when the scheduler fires.
 on:
   schedule:
     - cron: '*/5 * * * *'
@@ -15,7 +24,9 @@ permissions:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    # Hosted runners are capped at 6h. Stay under it so the job ends on its own terms and
+    # the queued run takes over cleanly.
+    timeout-minutes: 350
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,19 +39,60 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run poller
+      - name: Poll every 5 minutes for the life of the job
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        run: node poller.js
-
-      - name: Commit updated dedup state
+          POLL_INTERVAL_SECONDS: '300'
+          # 5h40m of polling, leaving headroom before the 350m job timeout.
+          POLL_WINDOW_SECONDS: '20400'
+          # Persist state every 6th poll (~30 min). Committing every iteration would be
+          # ~300 commits/day of a 150KB file; the cost of batching is that a cancelled job
+          # can lose up to 30 minutes of dedup state, which re-notifies at most that
+          # window's hazards once.
+          PUSH_EVERY_ITERATIONS: '6'
         run: |
-          git config user.name "github-actions[bot]"
+          set -uo pipefail
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet state/seen-hazards.json; then
-            git add state/seen-hazards.json
-            git commit -m "chore: update seen-hazards state"
-            git push
-          else
-            echo "No state change — nothing to commit."
-          fi
+
+          persist_state() {
+            if ! git diff --quiet state/seen-hazards.json; then
+              git add state/seen-hazards.json
+              git commit -q -m "chore: update seen-hazards state"
+            fi
+            # Also picks up any commit an earlier push attempt failed to deliver.
+            if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+              if git pull --rebase --autostash -q origin main && git push -q origin HEAD:main; then
+                echo "State pushed."
+              else
+                echo "Push failed; will retry at the next checkpoint."
+              fi
+            fi
+          }
+
+          end=$(( $(date +%s) + POLL_WINDOW_SECONDS ))
+          iteration=0
+
+          while :; do
+            iteration=$(( iteration + 1 ))
+            echo "::group::Poll iteration $iteration ($(date -u +%H:%M:%SZ))"
+
+            # A single failed poll (NWS blip, FCM hiccup) must not end the job — the next
+            # iteration is only five minutes away.
+            node poller.js || echo "Poll iteration $iteration failed; continuing."
+
+            if [ $(( iteration % PUSH_EVERY_ITERATIONS )) -eq 0 ]; then
+              persist_state
+            fi
+            echo "::endgroup::"
+
+            remaining=$(( end - $(date +%s) ))
+            if [ "$remaining" -le "$POLL_INTERVAL_SECONDS" ]; then
+              echo "Poll window exhausted after $iteration iterations — handing over to the queued run."
+              break
+            fi
+            sleep "$POLL_INTERVAL_SECONDS"
+          done
+
+          # Always flush on the way out so a clean exit never drops state.
+          persist_state
