@@ -4720,5 +4720,102 @@
     ],
     "endsAtMs": 1788473700000,
     "expireAtMs": 1788495300000
+  },
+  "id_urn_oid_2.49.0.1.840.0.46bc36dc1bfd2c167643e5d573dca30369561d3e.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "MIZ058",
+      "MIZ059",
+      "MIZ066",
+      "MIZ067",
+      "MIZ074"
+    ],
+    "endsAtMs": 1788444900000,
+    "expireAtMs": 1788466500000
+  },
+  "vtec_KMKX_MA_W_0071": {
+    "tier": "severe",
+    "zones": [
+      "LMZ644",
+      "LMZ645",
+      "LMZ671",
+      "LMZ673"
+    ],
+    "endsAtMs": 1788445800000,
+    "expireAtMs": 1788467400000
+  },
+  "vtec_KCTP_SV_W_0346": {
+    "tier": "severe",
+    "zones": [
+      "PAC009",
+      "PAC055",
+      "PAC057",
+      "PAC111"
+    ],
+    "endsAtMs": 1788444900000,
+    "expireAtMs": 1788466500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.6bca796ae90f61c0bf01d3ed9332a5946ac885af.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "WIZ064",
+      "WIZ065"
+    ],
+    "endsAtMs": 1788445800000,
+    "expireAtMs": 1788467400000
+  },
+  "id_urn_oid_2.49.0.1.840.0.0202d272a5f04648639ed317ab8f6f589e847c01.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "NDZ013"
+    ],
+    "endsAtMs": 1788444000000,
+    "expireAtMs": 1788465600000
+  },
+  "vtec_KFWD_FF_W_0083": {
+    "tier": "severe",
+    "zones": [
+      "TXC289"
+    ],
+    "endsAtMs": 1788453000000,
+    "expireAtMs": 1788474600000
+  },
+  "id_urn_oid_2.49.0.1.840.0.bc0a5c1ec07e03d34d2ae34fccea1c748888a6a8.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "NEZ006",
+      "NEZ007"
+    ],
+    "endsAtMs": 1788444900000,
+    "expireAtMs": 1788466500000
+  },
+  "vtec_KGRR_SV_W_0123": {
+    "tier": "severe",
+    "zones": [
+      "MIC037",
+      "MIC045",
+      "MIC065"
+    ],
+    "endsAtMs": 1788445800000,
+    "expireAtMs": 1788467400000
+  },
+  "vtec_KHGX_FF_W_0051": {
+    "tier": "severe",
+    "zones": [
+      "TXC373"
+    ],
+    "endsAtMs": 1788450300000,
+    "expireAtMs": 1788471900000
+  },
+  "vtec_KBIS_FA_Y_0012": {
+    "tier": "minor",
+    "zones": [
+      "NDC009",
+      "NDC049",
+      "NDC069",
+      "NDC079"
+    ],
+    "endsAtMs": 1788453900000,
+    "expireAtMs": 1788475500000
   }
 }
