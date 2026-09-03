@@ -1,5 +1,17 @@
 # stormcellz-alert-poller
 
+**RETIRED 2026-09-03.** This workflow's `schedule` trigger is disabled — see
+`.github/workflows/poll.yml`'s header for why and for the rollback steps. It is superseded
+by the `checkNWSAlerts` Cloud Function in the main StormCellz repo (`functions/index.js`),
+which ports the dedup/notify logic below onto a Cloud Scheduler cron plus a Firestore
+single-document dedup store, an explicit fetch timeout, and a billing-budget kill switch.
+See that repo's `Documentation/planning/MASTER_IMPLEMENTATION_PLAN.md` §9.2 for the full
+cost analysis and decision record. Kept here, undeleted, as the rollback path and as the
+place the original per-hazard/VTEC/topic-naming logic is documented — the sections below
+describe how this repo worked while it was live.
+
+---
+
 Polls the National Weather Service's active-alerts feed every 5 minutes and pushes new
 severe weather alerts to [StormCellz](https://github.com/) via Firebase Cloud Messaging
 topics. No server, no Firestore, no Cloud Functions — this repo's whole job is to run a

@@ -1,17 +1,27 @@
 name: Poll NWS alerts
 
-# GitHub runs `schedule` events on a best-effort basis and heavily deprioritises
-# high-frequency crons. Measured on this repo, a `*/5` schedule actually fired every
-# 1.7–5.3 hours — so a Severe Thunderstorm Warning (typically 30–60 minutes) began and
-# expired between runs and was never pushed at all.
+# RETIRED 2026-09-03 — superseded by the checkNWSAlerts Cloud Function in the main
+# StormCellz repo (functions/index.js), a scheduled Firebase function on the same 5-minute
+# cadence with the same dedup logic (ported from this file's poller.js) plus a Firestore
+# single-document dedup store, an explicit fetch timeout, and a Cloud Billing budget kill
+# switch. See Documentation/planning/MASTER_IMPLEMENTATION_PLAN.md §9.2 in that repo for the
+# full cost analysis and the decision record.
 #
-# The fix is to stop depending on the trigger cadence: each run polls on its own loop for
-# ~5h40m. The `*/5` cron is kept only to keep a run queued. With the concurrency group
-# below, GitHub holds at most one pending run, and it starts the moment the current one
-# ends — so coverage is continuous rather than a function of when the scheduler fires.
+# The schedule trigger is disabled below so this workflow cannot run alongside the Cloud
+# Function and double-send every notification. workflow_dispatch is kept so this can be
+# re-armed by hand as a rollback without reverting any code — see poller.js's own header for
+# what it does; nothing here needs to change to bring it back, only re-adding the `schedule:`
+# block below and re-running `gcloud scheduler jobs pause
+# firebase-schedule-checkNWSAlerts-us-central1 --location=us-central1 --project=stormcellz`
+# on the Cloud Function side first, so the two don't run concurrently.
+#
+# Historical note, kept for context: GitHub runs `schedule` events on a best-effort basis and
+# heavily deprioritises high-frequency crons. Measured on this repo, a `*/5` schedule actually
+# fired every 1.7–5.3 hours — so a Severe Thunderstorm Warning (typically 30–60 minutes) began
+# and expired between runs and was never pushed at all. The fix at the time was to stop
+# depending on the trigger cadence: each run polled on its own internal loop for ~5h40m, with
+# the cron kept only to keep a run queued via the concurrency group below.
 on:
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch: {}
 
 concurrency:
