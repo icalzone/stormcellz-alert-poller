@@ -4817,5 +4817,22 @@
     ],
     "endsAtMs": 1788453900000,
     "expireAtMs": 1788475500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.82ab3384b35fd3ce6a4955b40456985ae7afd0a8.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "NDZ012"
+    ],
+    "endsAtMs": 1788444900000,
+    "expireAtMs": 1788466500000
+  },
+  "id_urn_oid_2.49.0.1.840.0.111b2b73691dc0e216450a3f637ecb18c49ee815.001.1": {
+    "tier": "moderate",
+    "zones": [
+      "NEZ005",
+      "NEZ094"
+    ],
+    "endsAtMs": 1788445800000,
+    "expireAtMs": 1788467400000
   }
 }
