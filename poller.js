@@ -45,17 +45,37 @@ function initFirebase() {
 // State file
 // ─────────────────────────────────────────────────────────────────
 
+// A missing state file means this is the first run ever, and an empty state is correct.
+// An *unreadable* one means something corrupted it, and treating that as an empty state
+// tells the poller nothing has ever been notified — which re-sends every active hazard to
+// every subscriber. On 2026-09-03 that happened for real: a git rebase left conflict
+// markers in this file and the next poll pushed 243 hazards in one iteration. Refuse to
+// guess. Exiting non-zero skips this poll; the workflow continues and the next one is five
+// minutes away.
 function loadState() {
+  if (!fs.existsSync(STATE_PATH)) return {};
+
+  const raw = fs.readFileSync(STATE_PATH, 'utf8');
   try {
-    return JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
-  } catch {
-    return {};
+    const parsed = JSON.parse(raw);
+    if (parsed === null || typeof parsed !== 'object' || Array.isArray(parsed)) {
+      throw new Error('state root is not an object');
+    }
+    return parsed;
+  } catch (err) {
+    console.error(`FATAL: ${STATE_PATH} is unreadable (${err.message}).`);
+    console.error('Refusing to poll with empty dedup state — that would re-notify every active hazard.');
+    process.exit(1);
   }
 }
 
+// Written via a temp file and renamed so a process killed mid-write leaves the previous
+// state intact rather than a truncated file that loadState would then reject.
 function saveState(state) {
   fs.mkdirSync(path.dirname(STATE_PATH), { recursive: true });
-  fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2) + '\n');
+  const tmp = `${STATE_PATH}.tmp`;
+  fs.writeFileSync(tmp, JSON.stringify(state, null, 2) + '\n');
+  fs.renameSync(tmp, STATE_PATH);
 }
 
 // ─────────────────────────────────────────────────────────────────

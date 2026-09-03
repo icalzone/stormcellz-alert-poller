@@ -39,6 +39,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # actions/checkout pins the SHA from the triggering event, which for a queued run is
+      # older than the state the outgoing run flushed on its way out. Starting from the real
+      # tip means this run begins with every hazard its predecessor already notified.
+      - name: Start from the latest committed state
+        run: |
+          git fetch -q origin main
+          git checkout -q -B main origin/main
+
       - name: Poll every 5 minutes for the life of the job
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
@@ -55,18 +63,51 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # State is merged in Node, never by git.
+          #
+          # This used to `git pull --rebase`. Both sides legitimately modify
+          # state/seen-hazards.json — the remote holds what earlier runs notified, the working
+          # copy holds what this run has notified since checkout — so the rebase conflicted,
+          # wrote conflict markers into the file, and left a .git/rebase-merge directory that
+          # made every later checkpoint in the same 5.7-hour run fail. The poller then read the
+          # conflicted file, failed to parse it, and (before the loadState fix) treated that as
+          # an empty dedup state: 243 hazards pushed to subscribers in one iteration.
+          #
+          # Now: fetch, union the two JSON objects, move HEAD to the remote tip keeping our
+          # merged file, and commit once on top. That is always a fast-forward, so it cannot
+          # conflict by construction.
           persist_state() {
-            if ! git diff --quiet state/seen-hazards.json; then
-              git add state/seen-hazards.json
-              git commit -q -m "chore: update seen-hazards state"
+            # Clear any half-finished rebase left by an older revision of this workflow, so a
+            # single bad state can't poison the rest of the run.
+            git rebase --abort >/dev/null 2>&1 || true
+
+            if ! git fetch -q origin main; then
+              echo "Fetch failed; will retry at the next checkpoint."
+              return
             fi
-            # Also picks up any commit an earlier push attempt failed to deliver.
-            if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
-              if git pull --rebase --autostash -q origin main && git push -q origin HEAD:main; then
-                echo "State pushed."
-              else
-                echo "Push failed; will retry at the next checkpoint."
-              fi
+
+            if ! git show origin/main:state/seen-hazards.json > /tmp/remote-state.json 2>/dev/null; then
+              echo '{}' > /tmp/remote-state.json
+            fi
+
+            if ! node merge-state.js /tmp/remote-state.json state/seen-hazards.json; then
+              echo "State merge failed; leaving the working copy alone and retrying at the next checkpoint."
+              return
+            fi
+
+            # HEAD to the remote tip, working tree untouched — the commit below is a fast-forward.
+            git reset -q --mixed origin/main
+
+            if git diff --quiet state/seen-hazards.json; then
+              return
+            fi
+
+            git add state/seen-hazards.json
+            git commit -q -m "chore: update seen-hazards state"
+            if git push -q origin HEAD:main; then
+              echo "State pushed."
+            else
+              echo "Push failed; will retry at the next checkpoint."
             fi
           }
 
