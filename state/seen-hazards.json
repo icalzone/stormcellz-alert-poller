@@ -7616,5 +7616,15 @@
     ],
     "endsAtMs": 1788479100000,
     "expireAtMs": 1788500700000
+  },
+  "vtec_KPBZ_SV_W_0349": {
+    "tier": "severe",
+    "zones": [
+      "PAC051",
+      "PAC063",
+      "PAC129"
+    ],
+    "endsAtMs": 1788479100000,
+    "expireAtMs": 1788500700000
   }
 }
